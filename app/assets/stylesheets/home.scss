@@ -39,7 +39,7 @@ $secondary-color: #D3BFB7;
   width: 40vw;
 
   margin: 0;
-  padding: 40px 40px 40px 40px;
+  padding: 20px 30px 30px 30px;
 
   h1,h2, h3, hr {
     color: $secondary-color;
@@ -70,24 +70,30 @@ $secondary-color: #D3BFB7;
 }
 
 #last-row-intro-margin-bottom {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.icon-intro {
+.icon-intro, .icon-right-panel {
   width: 1.1em;
   height: 1.1em;
-  fill: white;
   vertical-align: middle;
+}
 
-  margin-right: 10px;
+.icon-intro {
+  fill: white;
+  margin-right: 5px;
+}
+
+.icon-right-panel {
+  fill: $background-color;
 }
 
 .icon-margin-left {
@@ -95,7 +101,7 @@ $secondary-color: #D3BFB7;
 }
 
 .text-justified {
-  text-align: justify;
+  // text-align: justify;
 }
 
 .right-panel {
@@ -105,7 +111,7 @@ $secondary-color: #D3BFB7;
 
   margin: 0px;
 
-  margin: 40px 40px 40px 40px;
+  margin: 20px 30px 30px 30px;
 
   h1, h2, h3, hr {
     color: $background-color;
@@ -116,7 +122,7 @@ $secondary-color: #D3BFB7;
   }
 }
 
-.right-panel-card {
+.right-panel-card, .right-panel-card-with-illustration .right-panel-card-skills {
   display: flex;
   flex-direction: column;
 
@@ -125,6 +131,20 @@ $secondary-color: #D3BFB7;
   p, li {
     margin: 0 0 3px 0;
   }
+}
+
+.right-panel-card-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.right-panel-card-with-illustration {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
 }
 
 .right-line {
@@ -137,7 +157,66 @@ $secondary-color: #D3BFB7;
   width: 100%;
   border: 1px solid $secondary-color;
   margin-bottom: 5px;
+}
 
+.skills-pills {
+  border-radius: 999px;
+  padding: 5px 10px 5px 10px;
+}
+
+.illustration {
+  width: 50px;
+  height: 50px;
+}
+
+.red-pill {
+  background-color: #BF1803;
+  color: white;
+}
+
+.html-pill {
+  background-color: #E96228;
+  color: white;
+}
+
+.css-pill {
+  background-color: #2965F1;
+  color: white;
+}
+
+.js-pill {
+  background-color: #F0DB4F;
+  color: black;
+}
+
+.stimulus-pill {
+  background-color: #77E8B9;
+  color: black;
+}
+
+.git-pill {
+  background-color: black;
+  color: white;
+}
+
+.sql-pill {
+  background-color: #2583C9;
+  color: white;
+}
+
+.heroku-pill {
+  background-color: #634987;
+  color: white;
+}
+
+.csharp-pill {
+  background-color: #68217A;
+  color: white;
+}
+
+.r-pill {
+  background-color: #266ABD;
+  color: white;
 }
 
 * {
